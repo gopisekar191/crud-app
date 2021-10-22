@@ -31,9 +31,7 @@ class SearchController extends Controller
             '<td>'.$student->marks.'</td>'.
             '</tr>';
             }
-        }
-        $json = json_encode($output, true);
-        print_r($json);exit;    
+        }    
         return Response($output);
    }
 }
